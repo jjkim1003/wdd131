@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WDD 131: Dynamic Web Fundamentals - JJ Kim</title>
+    <meta name="description"
+        content="WDD 131 – Dynamic Web Fundamentals. JJ Kim. Personal bio and web development resources.">
+    <meta name="author" content="JJ Kim">
+    <link rel="stylesheet" href="styles/base.css">
+    <script src="scripts/getdates.js" defer></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Contrail+One&family=Kantumruy+Pro:wght@100..700&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+
+    <!-- Header Section -->
+    <header>
+        <h1>WDD 131: Dynamic Web Fundamentals - <span class="highlight">JJ Kim</span></h1>
+        <nav>
+            <ul>
+                <li><a href="https://www.linkedin.com/" target="_blank">LinkedIn</a></li>
+                <li><a href="https://byupw.instructure.com/" target="_blank">Canvas</a></li>
+                <li><a href="https://www.churchofjesuschrist.org/study/scriptures/bofm/1-ne/3?lang=eng&id=p7#p7"
+                        target="_blank">Favorite Scripture</a></li>
+                <li><a href="#">Final Project</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Main Content -->
+    <main class="container">
+        <!-- Left Column -->
+        <section class="left-column">
+            <!-- About Me Section -->
+            <section class="card about-me">
+                <h2>About Me</h2>
+                <div class="about-me-content">
+                    <p>
+                        My name is Jae Jin Kim, but most people call me JJ. I was born and raised in Seoul, South Korea,
+                        and now call Houston, Texas, my home. My journey to the U.S. began when I started my studies at
+                        BYU in Provo,
+                        and over time, my family made the move with me. Today, I work as a researcher in the energy
+                        industry,
+                        where I explore innovative solutions for the future.
+                        I have a deep passion for learning new things, whether it is expanding my knowledge in my field
+                        or diving into personal interests like web development. The thrill of solving problems and
+                        creating
+                        something new keeps me inspired every day.
+                    </p>
+                    <img src="images/profile.jpg" alt="JJ Kim's Profile Picture">
+                </div>
+            </section>
+
+            <!-- Location Section -->
+            <section class="card seoul">
+                <h2>Seoul, South Korea</h2>
+                <div class="location-content">
+                    <img src="images/flag.png" alt="Official Flag of South Korea">
+                    <p>
+                        Seoul, the capital of South Korea, is home to over 9.4 million people, making it one of the
+                        largest cities in the world. It is a global center for technology, fashion, and entertainment,
+                        with famous landmarks like Gyeongbokgung Palace and the N Seoul Tower.
+                        The city seamlessly blends history and modernity, from traditional hanok villages to futuristic
+                        skyscrapers. With an extensive subway system and a metropolitan area housing over 25 million
+                        people, Seoul is one of the most connected and dynamic cities on the planet.
+                    </p>
+                </div>
+            </section>
+        </section>
+
+        <!-- Right Column (Web Dev Resources) -->
+        <aside class="right-column">
+            <section class="card resources">
+                <h2>Web Dev Resources</h2>
+                <ul>
+                    <li><a href="https://dev.to/" target="_blank">Dev.to Community</a></li>
+                    <li><a href="https://www.smashingmagazine.com/" target="_blank">Smashing Magazine</a></li>
+                    <li><a href="https://css-tricks.com/" target="_blank">CSS Tricks</a></li>
+                    <li><a href="https://www.w3schools.com/" target="_blank">W3 Schools</a></li>
+                    <li><a href="https://www.udemy.com/" target="_blank">Udemy</a></li>
+                    <li><a href="#" class="aside__link" target="_blank">Image Placeholder</a></li>
+                </ul>
+            </section>
+        </aside>
+    </main>
+
+    <!-- Footer Section -->
+    <footer>
+        <p>© <span id="currentyear"></span> 🌸 JJ Kim 🌸 Houston, Texas </p>
+        <p id="lastModified"></p>
+    </footer>
+
+</body>
+
+</html>

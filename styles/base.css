@@ -1,0 +1,203 @@
+/* Global Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Kantumruy Pro', sans-serif;
+    background-color: #f8f9fa;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* Header */
+header {
+    background: #2b4d80;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+h1 {
+    font-family: 'Contrail One', sans-serif;
+    font-size: 2rem;
+}
+
+/* Title Styling (Underlined Effect) */
+h2 {
+    font-size: 1.5rem;
+    color: #2b4d80;
+    position: relative;
+    display: inline-block;
+    padding-bottom: 5px;
+}
+
+h2::after {
+    content: "";
+    width: 50px;
+    height: 3px;
+    background: #f4c400;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+
+/* Navigation */
+nav {
+    background: black;
+    display: flex;
+    justify-content: center;
+    padding: 15px 0;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    gap: 20px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.2rem;
+    padding: 10px 15px;
+    transition: background 0.3s, transform 0.2s;
+}
+
+nav ul li a:hover {
+    background: #555;
+    transform: scale(1.1);
+}
+
+/* Main Layout */
+main {
+    width: 90%;
+    max-width: 1100px;
+    margin: 30px auto;
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 20px;
+    align-items: start;
+}
+
+/* Left Column: "About Me" & "Seoul, South Korea" */
+.left-column {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+/* Right Column: "Web Dev Resources" */
+.right-column {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+/* Card Styling */
+.card {
+    background: white;
+    padding: 25px;
+    border-radius: 12px;
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.15);
+}
+
+/* About Me Section */
+.about-me {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    padding: 25px;
+}
+
+.about-me-content {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    gap: 20px;
+    font-weight: bold;
+    align-items: center;
+}
+
+/* Profile Image on the Right */
+.about-me img {
+    width: 200px;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 2px 2px 15px rgba(0, 0, 0, 0.15);
+    background: white;
+    padding: 8px;
+}
+
+/* Seoul, South Korea Section */
+.seoul {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    padding: 25px;
+}
+
+/* Seoul, South Korea Content */
+.location-content {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    gap: 20px;
+    font-weight: bold;
+    align-items: center;
+}
+
+/* Flag Image */
+.location-content img {
+    width: 200px;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 2px 2px 15px rgba(0, 0, 0, 0.15);
+    background: white;
+    padding: 8px;
+}
+
+
+/* Web Dev Resources */
+.resources {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Web Dev Resources Links */
+.resources ul {
+    padding-left: 20px;
+}
+
+.resources ul li {
+    margin-bottom: 10px;
+}
+
+.resources ul li a {
+    text-decoration: none;
+    color: #2b4d80;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+.resources ul li a:hover {
+    color: #f4c400;
+    text-decoration: underline;
+}
+
+/* Footer */
+footer {
+    background: #2b4d80;
+    color: white;
+    text-align: center;
+    padding: 15px;
+    margin-top: 30px;
+    font-size: 1rem;
+}
