@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WDD 131 - Place - JJ Kim</title>
+    <meta name="description" content="WDD 131 - Place. Seoul picture and data with responsive design.">
+    <meta name="author" content="JJ Kim">
+    <link rel="stylesheet" href="styles/place.css">
+    <script src="scripts/place.js" defer></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <header class="hero">
+        <h1>Seoul, Korea</h1>
+    </header>
+
+    <main>
+        <section class="image-section">
+            <picture>
+                <source srcset="images/hero-large.webp" media="(min-width: 1000px)">
+                <source srcset="images/hero-medium.webp" media="(min-width: 550px)">
+                <img src="images/hero-small.webp" alt="Seoul, Korea Skyline" width="400" height="200">
+            </picture>
+            <div class="data-card">
+                <h2>Data</h2>
+                <p><strong>Area:</strong> 605.2 sq km</p>
+                <p><strong>Population:</strong> 9,736,027</p>
+                <p><strong>Capital:</strong> Seoul</p>
+                <p><strong>Language:</strong> Korean</p>
+                <p><strong>Currency:</strong> South Korean Won (KRW)</p>
+                <p><strong>Time Zone:</strong> UTC+9</p>
+                <p><strong>Calling Code:</strong> +82</p>
+                <p><strong>Internet TLD:</strong> .kr</p>
+            </div>
+            <div class="weather-card">
+                <h2>Weather</h2>
+                <p><strong>Temperature:</strong> 15°C</p>
+                <p><strong>Conditions:</strong> Partly Cloudy</p>
+                <p><strong>Wind:</strong> 10 km/h</p>
+                <p><strong>Wind Chill:</strong> 12°C</p>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; <span id="currentyear"></span> 🌸 JJ Kim 🌸 Seoul, Korea & Houston, Texas</p>
+        <p id="lastModified"></p>
+    </footer>
+</body>
+
+</html>

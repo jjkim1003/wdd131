@@ -1,0 +1,76 @@
+/* styles/place.css */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+body {
+    text-align: center;
+    background-color: #f4f4f4;
+}
+
+.hero {
+    background-color: #a00;
+    color: white;
+    padding: 20px;
+    font-size: 2rem;
+    text-align: center;
+}
+
+.image-section {
+    position: relative;
+    width: 100%;
+    max-width: 1200px;
+    margin: 20px auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.image-section picture {
+    flex: 1 1 600px;
+    text-align: center;
+}
+
+.image-section img {
+    width: 100%;
+    height: auto;
+    max-width: 1000px;
+    border-radius: 10px;
+}
+
+.data-card,
+.weather-card {
+    background: rgba(255, 255, 255, 0.9);
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    max-width: 300px;
+}
+
+.data-card h2,
+.weather-card h2 {
+    background-color: #006400;
+    color: white;
+    padding: 5px;
+    border-radius: 5px;
+    text-align: left;
+}
+
+.data-card p,
+.weather-card p {
+    text-align: left;
+    margin: 8px 0;
+}
+
+footer {
+    background-color: #a00;
+    color: white;
+    padding: 10px;
+    text-align: center;
+    margin-top: 20px;
+}
