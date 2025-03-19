@@ -67,6 +67,20 @@ body {
     margin: 8px 0;
 }
 
+.weather-card .weather-icon {
+    display: block;
+    margin: 10px auto;
+    width: 50px;
+    height: 50px;
+}
+
+/* Apply SVG for mobile view */
+@media (max-width: 600px) {
+    .weather-card .weather-icon {
+        content: url('images/weather.svg');
+    }
+}
+
 footer {
     background-color: #a00;
     color: white;
