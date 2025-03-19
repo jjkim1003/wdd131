@@ -1,4 +1,11 @@
 /* styles/place.css */
+
+:root {
+    --primary-color: #a00;
+    --secondary-color: #006400;
+    --card-bg: rgba(255, 255, 255, 0.9);
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -12,11 +19,21 @@ body {
 }
 
 .hero {
-    background-color: #a00;
+    background-color: var(--primary-color);
     color: white;
     padding: 20px;
     font-size: 2rem;
     text-align: center;
+    position: relative;
+}
+
+.hero::after {
+    content: '';
+    display: block;
+    width: 80%;
+    height: 4px;
+    background-color: white;
+    margin: 10px auto 0;
 }
 
 .image-section {
@@ -45,7 +62,7 @@ body {
 
 .data-card,
 .weather-card {
-    background: rgba(255, 255, 255, 0.9);
+    background: var(--card-bg);
     padding: 15px;
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
@@ -54,7 +71,7 @@ body {
 
 .data-card h2,
 .weather-card h2 {
-    background-color: #006400;
+    background-color: var(--secondary-color);
     color: white;
     padding: 5px;
     border-radius: 5px;
@@ -82,7 +99,7 @@ body {
 }
 
 footer {
-    background-color: #a00;
+    background-color: var(--primary-color);
     color: white;
     padding: 10px;
     text-align: center;
