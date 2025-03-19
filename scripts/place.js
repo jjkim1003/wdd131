@@ -17,5 +17,5 @@ function calculateWindChill(temp, wind) {
 if (temperature <= 10 && windSpeed > 4.8) {
     document.querySelector(".weather-card p:nth-child(5)").textContent = `Wind Chill: ${calculateWindChill(temperature, windSpeed).toFixed(1)}°C`;
 } else {
-    document.querySelector(".weather-card p:nth-child(5)").textContent = "Wind Chill: N/A";
+    document.querySelector(".weather-card p:nth-child(5)").textContent = "Wind: N/A";
 }
