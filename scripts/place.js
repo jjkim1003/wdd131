@@ -6,7 +6,7 @@ document.getElementById("lastModified").textContent = "Last Modification: " + do
 
 // Define static values for temperature and wind speed
 const temperature = 10; // °C
-const windSpeed = 10; // km/h
+const windSpeed = 5; // km/h
 
 // Function to calculate wind chill
 function calculateWindChill(temp, wind) {
