@@ -6,7 +6,7 @@ document.getElementById("lastModified").textContent = "Last Modification: " + do
 
 // Define static values for temperature and wind speed
 const temperature = 15; // °C
-const windSpeed = 10; // km/h
+const windSpeed = 4; // km/h
 
 // Function to calculate wind chill
 function calculateWindChill(temp, wind) {
@@ -17,5 +17,5 @@ function calculateWindChill(temp, wind) {
 if (temperature <= 10 && windSpeed > 4.8) {
     document.querySelector(".weather-card p:nth-child(5)").textContent = `Wind Chill: ${calculateWindChill(temperature, windSpeed).toFixed(1)}°C`;
 } else {
-    document.querySelector(".weather-card p:nth-child(5)").textContent = "Wind: N/A";
+    document.querySelector(".weather-card p:nth-child(5)").textContent = "Wind Chill: N/A";
 }
