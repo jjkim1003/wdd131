@@ -5,7 +5,7 @@ document.getElementById("currentyear").textContent = new Date().getFullYear();
 document.getElementById("lastModified").textContent = "Last Modification: " + document.lastModified;
 
 // Define static values for temperature and wind speed
-const temperature = 15; // °C
+const temperature = 10; // °C
 const windSpeed = 10; // km/h
 
 // Function to calculate wind chill
