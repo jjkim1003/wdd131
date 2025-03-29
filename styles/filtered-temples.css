@@ -55,26 +55,32 @@ nav a.active {
 }
 
 .container {
-    max-width: 800px;
+    max-width: 1200px;
     margin: 0 auto;
     padding: 20px;
 }
 
 .res-grid {
     display: grid;
-    grid-template-columns: 1fr;
+    grid-template-columns: repeat(3, 1fr);
     gap: 15px;
     padding: 10px;
 }
 
-figure {
+.res-grid section {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    padding: 10px;
     text-align: center;
 }
 
-figure img {
+.res-grid img {
     width: 100%;
     height: auto;
     border-radius: 10px;
+    display: block;
+    margin-top: 10px;
 }
 
 footer {

@@ -1,3 +1,5 @@
+// filtered-temples.js
+
 // Dynamically get the current year
 document.getElementById("currentyear").textContent = new Date().getFullYear();
 
@@ -69,27 +71,41 @@ const temples = [
         location: "Seoul, Korea",
         dedicated: "1985, December, 14",
         area: 28057,
-        imageUrl: "https://content.churchofjesuschrist.org/templesldsorg/bc/Temples/photo-galleries/mexico-city-mexico/400x250/mexico-city-temple-exterior-1518361-wallpaper.jpg"
+        imageUrl: "https://content.churchofjesuschrist.org/templesldsorg/bc/Temples/photo-galleries/seoul-korea/400x250/seoul-korea-temple-lds-424784-wallpaper.jpg"
     },
     {
         templeName: "Houston Texas",
         location: "Houston, Texas",
         dedicated: "2000, August, 26",
         area: 33970,
-        imageUrl: "https://content.churchofjesuschrist.org/templesldsorg/bc/Temples/photo-galleries/mexico-city-mexico/400x250/mexico-city-temple-exterior-1518361-wallpaper.jpg"
+        imageUrl: "https://content.churchofjesuschrist.org/templesldsorg/bc/Temples/photo-galleries/houston-texas/2018/400x250/houston-temple02.jpg"
     },
     {
         templeName: "Dallas Texas",
         location: "Dallas, Texas",
         dedicated: "1984, October, 19",
         area: 44207,
-        imageUrl: "https://content.churchofjesuschrist.org/templesldsorg/bc/Temples/photo-galleries/mexico-city-mexico/400x250/mexico-city-temple-exterior-1518361-wallpaper.jpg"
+        imageUrl: "https://content.churchofjesuschrist.org/templesldsorg/bc/Temples/photo-galleries/dallas-texas/400x250/dallas-temple-lds-1048888-wallpaper.jpg"
+    },
+    {
+        templeName: "San Antonio Texas",
+        location: "San Antonio, Texas",
+        dedicated: "2005, May, 22",
+        area: 16800,
+        imageUrl: "https://content.churchofjesuschrist.org/templesldsorg/bc/Temples/photo-galleries/san-antonio-texas/400x250/san-antonio-temple-lds-352484-wallpaper.jpg"
+    },
+    {
+        templeName: "Provo City Center",
+        location: "Provo, Texas",
+        dedicated: "2016, March, 20",
+        area: 85084,
+        imageUrl: "https://content.churchofjesuschrist.org/templesldsorg/bc/Temples/photo-galleries/provo-city-center/2018/400x250/Provo-City-Center-Temple08.jpg"
     }
 ];
 
 function createTempleCard(filteredTemples) {
     const grid = document.querySelector(".res-grid");
-    grid.innerHTML = ""; // Clear existing content
+    grid.innerHTML = "";
 
     filteredTemples.forEach(temple => {
         let card = document.createElement("section");
@@ -135,10 +151,10 @@ function filterTemples(category) {
         default:
             filtered = temples;
     }
+    document.querySelector("main h2").textContent = category.charAt(0).toUpperCase() + category.slice(1);
     createTempleCard(filtered);
 }
 
-// Navigation filtering
 document.querySelectorAll("nav a").forEach(link => {
     link.addEventListener("click", (e) => {
         e.preventDefault();
@@ -150,5 +166,4 @@ document.querySelectorAll("nav a").forEach(link => {
     });
 });
 
-// Initial load
 createTempleCard(temples);
