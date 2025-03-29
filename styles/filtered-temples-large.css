@@ -1,0 +1,37 @@
+@media (min-width: 740px) {
+
+    /* Header */
+    header {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    nav ul {
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-end;
+    }
+
+    nav a {
+        padding: 15px 20px;
+    }
+
+    /* Album Grid - 3 Columns */
+    .album-grid {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 20px;
+        padding: 20px;
+    }
+
+    figure {
+        text-align: center;
+    }
+
+    figure img {
+        width: 100%;
+        height: auto;
+        border-radius: 10px;
+    }
+}
