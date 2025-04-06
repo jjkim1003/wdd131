@@ -23,18 +23,19 @@
     <main>
         <form action="review.html" method="get">
             <!-- Product Name -->
-            <label for="product">Product Name</label>
-            <select id="product" name="product" required> </select>
+            <select id="product" name="product" required>
+            <option value="" disabled selected>Select a Product ...</option>
+            </select>
 
             <!-- Overall Rating -->
-            <label for="rating">Overall Rating</label>
-            <div class="rating-group">
+            <fieldset class="rating-group">
+                <legend>Overall Rating</legend>
                 <label for="star1">☆<br><input type="radio" id="star1" name="rating" value="1" required></label>
                 <label for="star2">☆☆<br><input type="radio" id="star2" name="rating" value="2"></label>
                 <label for="star3">☆☆☆<br><input type="radio" id="star3" name="rating" value="3"></label>
                 <label for="star4">☆☆☆☆<br><input type="radio" id="star4" name="rating" value="4"></label>
                 <label for="star5">☆☆☆☆☆<br><input type="radio" id="star5" name="rating" value="5"></label>
-            </div>
+            </fieldset>
 
             <!-- Date of Installation -->
             <label for="installDate">Date of Installation</label>
