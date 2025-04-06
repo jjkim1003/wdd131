@@ -80,11 +80,11 @@ nav a:hover {
 
 /* Footer */
 footer {
-    background-color: #457B9D;
+    background: #2b4d80;
     color: white;
     text-align: center;
-    padding: 1rem;
-    font-size: 0.9rem;
+    padding: 15px;
+    margin-top: 30px;
 }
 
 /* Responsive Navigation (Optional Hamburger Setup) */
