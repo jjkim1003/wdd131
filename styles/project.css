@@ -1,0 +1,99 @@
+/* General Reset and Fonts */
+body {
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+    background-color: #f1faee;
+    color: #333;
+}
+
+h1,
+h2 {
+    font-family: 'Playfair Display', serif;
+    color: #e63946;
+}
+
+/* Header */
+header {
+    background-color: #457b9d;
+    color: white;
+    padding: 1rem 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 1rem;
+    padding: 0;
+}
+
+.nav-links li a {
+    color: white;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.nav-links li a:hover {
+    text-decoration: underline;
+}
+
+/* Hero Section */
+.hero {
+    position: relative;
+    text-align: center;
+}
+
+.hero img {
+    width: 100%;
+    height: auto;
+    max-height: 500px;
+    object-fit: cover;
+}
+
+.hero-text {
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(69, 123, 157, 0.7);
+    color: white;
+    padding: 1.5rem;
+    border-radius: 10px;
+}
+
+/* Intro Section */
+.intro {
+    padding: 2rem;
+    text-align: center;
+}
+
+button {
+    background-color: #e63946;
+    color: white;
+    border: none;
+    padding: 0.8rem 1.2rem;
+    font-size: 1rem;
+    border-radius: 6px;
+    cursor: pointer;
+    margin-top: 1rem;
+}
+
+button:hover {
+    background-color: #d62839;
+}
+
+/* Footer */
+footer {
+    background-color: #2b4d80;
+    color: white;
+    text-align: center;
+    padding: 1rem;
+    margin-top: 2rem;
+}
