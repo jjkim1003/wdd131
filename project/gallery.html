@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Gallery - Discover Seoul</title>
+    <link rel="stylesheet" href="styles/project.css" />
+    <script src="scripts/project.js" defer></script>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&family=Roboto:wght@400;700&display=swap"
+        rel="stylesheet" />
+</head>
+
+<body>
+    <header>
+        <div class="logo">Discover Seoul, Korea</div>
+        <nav>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="attractions.html">Attractions</a></li>
+                <li><a href="cuisine.html">Cuisine</a></li>
+                <li><a href="gallery.html" class="active">Gallery</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="gallery-page">
+        <h1>Explore Seoul Through Photos</h1>
+
+        <div class="filter-buttons">
+            <button class="filter-btn active" data-category="all">All</button>
+            <button class="filter-btn" data-category="landmark">Landmarks</button>
+            <button class="filter-btn" data-category="food">Food</button>
+            <button class="filter-btn" data-category="citylife">City Life</button>
+        </div>
+
+        <div class="gallery-grid">
+            <img src="images/gallery-palace.jpg" alt="Gyeongbokgung Palace" loading="lazy" data-category="landmark">
+            <img src="images/gallery-tower.jpg" alt="N Seoul Tower" loading="lazy" data-category="landmark">
+            <img src="images/gallery-bibimbap.jpg" alt="Bibimbap Dish" loading="lazy" data-category="food">
+            <img src="images/gallery-tteokbokki.jpg" alt="Tteokbokki Street Food" loading="lazy" data-category="food">
+            <img src="images/gallery-nightcity.jpg" alt="Seoul at Night" loading="lazy" data-category="citylife">
+            <img src="images/gallery-shopping.jpg" alt="Shopping Street in Myeongdong" loading="lazy"
+                data-category="citylife">
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; <span id="currentyear"></span> Discover Seoul, Korea | All rights reserved.</p>
+        <p id="lastModified"></p>
+    </footer>
+</body>
+
+</html>

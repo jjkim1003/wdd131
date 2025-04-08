@@ -4,11 +4,11 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Discover Seoul, Korea</title>
+    <title>Contact - Discover Seoul</title>
     <link rel="stylesheet" href="styles/project.css" />
     <script src="scripts/project.js" defer></script>
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&family=Roboto:wght@400;700&display=swap"
-        rel="stylesheet">
+        rel="stylesheet" />
 </head>
 
 <body>
@@ -20,27 +20,27 @@
                 <li><a href="attractions.html">Attractions</a></li>
                 <li><a href="cuisine.html">Cuisine</a></li>
                 <li><a href="gallery.html">Gallery</a></li>
-                <li><a href="contact.html">Contact</a></li>
+                <li><a href="contact.html" class="active">Contact</a></li>
             </ul>
         </nav>
     </header>
 
-    <main>
-        <section class="hero">
-            <img src="images/seoul-hero.jpg" alt="Seoul Cityscape" loading="lazy" />
-            <div class="hero-text">
-                <h1>Welcome to Seoul</h1>
-                <p>Experience the perfect blend of ancient history and cutting-edge technology in South Korea’s vibrant
-                    capital city.</p>
-            </div>
-        </section>
+    <main class="contact-page">
+        <h1>Contact Us</h1>
+        <p>Have a question or suggestion about visiting Seoul? We'd love to hear from you!</p>
 
-        <section class="intro">
-            <h2>Discover Seoul’s Charm</h2>
-            <p>From the royal palaces of the Joseon Dynasty to the futuristic skyline of Gangnam, Seoul offers a unique
-                cultural journey for every traveler.</p>
-            <button id="favoriteBtn">❤️ Mark as Favorite Destination</button>
-        </section>
+        <form id="contactForm" action="thanks.html" method="get">
+            <label for="name">Full Name*</label>
+            <input type="text" id="name" name="name" required placeholder="Your full name" />
+
+            <label for="email">Email Address*</label>
+            <input type="email" id="email" name="email" required placeholder="you@example.com" />
+
+            <label for="message">Your Message*</label>
+            <textarea id="message" name="message" rows="5" required placeholder="Write your message here..."></textarea>
+
+            <input type="submit" value="Send Message" />
+        </form>
     </main>
 
     <footer>
