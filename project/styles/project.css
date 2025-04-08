@@ -25,9 +25,7 @@ h4 {
 /* Header & Navigation */
 header {
     background-color: #1f3b57;
-    /* Deep navy */
     color: #f1faee;
-    /* Light font for contrast */
     padding: 1.5rem 2rem;
     display: flex;
     flex-wrap: wrap;
@@ -62,10 +60,9 @@ header {
 .nav-links li a:hover,
 .nav-links li a.active {
     color: #a8dadc;
-    /* subtle accent on hover */
 }
 
-/* Hero Section on Home Page */
+/* Hero Section */
 .hero {
     position: relative;
     text-align: center;
@@ -81,7 +78,6 @@ header {
     display: block;
 }
 
-/* Better styled hero text */
 .hero-text {
     position: absolute;
     top: 50%;
@@ -97,32 +93,70 @@ header {
     line-height: 1.4;
 }
 
+@media (max-width: 768px) {
+    .hero-text {
+        font-size: 1.5rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .hero-text {
+        font-size: 1.2rem;
+    }
+}
+
+/* Intro Section on Home Page */
 .intro {
-    padding: 2rem;
+    padding: 3rem 2rem;
     text-align: center;
+    background-color: #f8fdf5;
+}
+
+.intro h2 {
+    font-size: 2.5em;
+    color: #b0232c;
+    font-family: 'Playfair Display', serif;
+    font-weight: bold;
+    margin-bottom: 1rem;
+}
+
+.intro p {
+    font-size: 1.5rem;
+    font-weight: bold;
+    max-width: 800px;
+    margin: 0 auto 2rem;
+    line-height: 1.6;
+    color: #333;
+}
+
+/* Button Group */
+.button-group {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 1rem;
 }
 
 button,
 .cta-button {
-    background-color: #e63946;
+    background-color: #c0392b;
     color: white;
     border: none;
-    padding: 0.8rem 1.2rem;
-    font-size: 1rem;
+    padding: 0.9rem 1.4rem;
+    font-size: 1.4rem;
+    font-weight: 600;
     border-radius: 6px;
     cursor: pointer;
-    margin-top: 1rem;
     text-decoration: none;
-    display: inline-block;
     transition: background-color 0.3s ease;
 }
 
 button:hover,
 .cta-button:hover {
-    background-color: #d62839;
+    background-color: #a62824;
 }
 
-/* Section Headings */
+/* Attractions & Cuisine Page Titles */
 .attractions h1,
 .cuisine h1 {
     text-align: center;
@@ -290,7 +324,8 @@ footer {
     text-align: center;
     padding: 1rem;
     margin-top: 2rem;
-    font-size: 0.9rem;
+    font-size: 1.2rem;
+    font-weight: bold;
 }
 
 /* Responsive Layout */
@@ -312,10 +347,6 @@ footer {
         margin-top: 0.5rem;
     }
 
-    .hero-text {
-        font-size: 0.9rem;
-    }
-
     .cards-container {
         grid-template-columns: 1fr;
         padding: 1rem;
@@ -324,15 +355,7 @@ footer {
     .card img {
         height: 160px;
     }
-}
 
-@media (max-width: 768px) {
-    .hero-text {
-        font-size: 1.5rem;
-    }
-}
-
-@media (max-width: 480px) {
     .hero-text {
         font-size: 1.2rem;
     }
