@@ -4,11 +4,12 @@ document.getElementById("lastModified").textContent = `Last Updated: ${document.
 
 // Favorite button interactivity with localStorage
 const favoriteBtn = document.getElementById("favoriteBtn");
-
-favoriteBtn.addEventListener("click", () => {
-    localStorage.setItem("favoriteDestination", "Seoul");
-    favoriteBtn.textContent = "❤️ Seoul is your favorite!";
-});
+if (favoriteBtn) {
+    favoriteBtn.addEventListener("click", () => {
+        localStorage.setItem("favoriteDestination", "Seoul");
+        favoriteBtn.textContent = "❤️ Seoul is your favorite!";
+    });
+}
 
 // Gallery Filter Logic
 const filterButtons = document.querySelectorAll(".filter-btn");
@@ -32,4 +33,3 @@ filterButtons.forEach(button => {
         });
     });
 });
-
