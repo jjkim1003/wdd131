@@ -82,7 +82,7 @@ header {
 
 .hero-heading {
     position: absolute;
-    top: 5%;
+    top: 2%;
     left: 50%;
     transform: translateX(-50%);
     color: #e63946;
@@ -97,7 +97,7 @@ header {
 @media (max-width: 768px) {
     .hero-heading {
         font-size: 2rem;
-        top: 10%;
+        top: 1%;
     }
 }
 
@@ -340,8 +340,7 @@ footer {
     color: white;
     text-align: center;
     padding: 1rem;
-    margin-top: 2rem;
-    font-size: 1.2rem;
+    font-size: 1rem;
     font-weight: bold;
 }
 
